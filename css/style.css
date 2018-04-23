@@ -5,9 +5,26 @@ body {
   height: 100%;
 }
 #content {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
-#header {
-  width: 100%;
+#header-container {
+  background-color: #2a2d34;
+}
+#header-content {
+  width: 90%;
+  margin: auto;
+}
+#header-content #brand,
+#header-content #nav {
+  width: 48%;
+  display: inline-block;
+}
+#header-content #brand {
+  text-align: left;
+  color: #93dc28;
+}
+#header-content #nav {
+  text-align: right;
+  color: #ffffff;
 }
