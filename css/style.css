@@ -1,3 +1,11 @@
+.content-width {
+  width: 90%;
+  margin: auto;
+}
+.two-column {
+  width: 48%;
+  display: inline-block;
+}
 #header-container {
   background-color: #2a2d34;
 }
@@ -17,6 +25,21 @@
 #header-content #nav {
   text-align: right;
   color: #ffffff;
+}
+#hero {
+  color: #ffffff;
+}
+#overlay {
+  width: 90%;
+  margin: auto;
+  background-color: #2a2d34;
+  opacity: 0.5;
+}
+#overlay #headshot-container,
+#overlay #about-me {
+  width: 48%;
+  display: inline-block;
+  text-align: center;
 }
 html,
 body {
