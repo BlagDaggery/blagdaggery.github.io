@@ -41,9 +41,14 @@
 #portfolio {
   text-align: center;
 }
-#portfolio .column {
-  width: 48%;
-  display: inline-block;
+.column {
+  width: 100%;
+}
+@media (min-width: 700px) {
+  .column {
+    width: 48%;
+    display: inline-block;
+  }
 }
 footer {
   text-align: center;
