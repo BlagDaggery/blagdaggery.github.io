@@ -1,12 +1,3 @@
-.content-width {
-  width: 90%;
-  margin: auto;
-  max-width: 1000px;
-}
-.two-column {
-  width: 48%;
-  display: inline-block;
-}
 #header-container {
   background-color: #2a2d34;
 }
@@ -35,11 +26,17 @@
   background-color: #2a2d34;
   opacity: 0.5;
 }
-#overlay #headshot-container,
-#overlay #about-me {
-  width: 48%;
-  display: inline-block;
+#headshot-container,
+#about-me {
+  width: 100%;
   text-align: center;
+}
+@media (min-width: 700px) {
+  #headshot-container,
+  #about-me {
+    width: 48%;
+    display: inline-block;
+  }
 }
 #portfolio {
   text-align: center;

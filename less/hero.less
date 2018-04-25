@@ -5,8 +5,15 @@
 #overlay {
   background-color: @dark-gray;
   opacity: 0.5;
+}
+
+#headshot-container, #about-me {
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
   #headshot-container, #about-me {
     .two-column();
-    text-align: center;
   }
 }
