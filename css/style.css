@@ -55,6 +55,14 @@ footer {
   background-color: #2a2d34;
   color: #ffffff;
 }
+.footer-item {
+  display: block;
+}
+@media (min-width: 700px) {
+  .footer-item {
+    display: inline;
+  }
+}
 html,
 body {
   padding: 0;
