@@ -41,6 +41,13 @@
   display: inline-block;
   text-align: center;
 }
+#portfolio {
+  text-align: center;
+}
+#portfolio .column {
+  width: 48%;
+  display: inline-block;
+}
 html,
 body {
   padding: 0;
