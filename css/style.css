@@ -4,7 +4,7 @@
 #header-content {
   width: 90%;
   margin: auto;
-  max-width: 1000px;
+  max-width: 1024px;
 }
 #header-content #brand,
 #header-content #nav {
@@ -20,19 +20,27 @@
   color: #ffffff;
 }
 #hero {
-  color: #ffffff;
+  color: #2a2d34;
 }
 #overlay {
-  background-color: #2a2d34;
-  opacity: 0.5;
+  background-color: #e3e3e3;
+  padding: 20px 0;
+  border-bottom: 3px #93dc28 solid;
 }
-#headshot-container,
+#headshot,
 #about-me {
   width: 100%;
   text-align: center;
 }
+#headshot-container img {
+  vertical-align: middle;
+  border-radius: 50%;
+}
+#about-me header {
+  padding-bottom: 20px;
+}
 @media (min-width: 700px) {
-  #headshot-container,
+  #headshot,
   #about-me {
     width: 48%;
     display: inline-block;
@@ -76,5 +84,5 @@ body {
 #content #content-container {
   width: 90%;
   margin: auto;
-  max-width: 1000px;
+  max-width: 1024px;
 }

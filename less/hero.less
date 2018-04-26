@@ -1,19 +1,31 @@
 #hero {
-  color: @white;
+  //color: @white;
+  color: @dark-gray;
 }
 
 #overlay {
-  background-color: @dark-gray;
-  opacity: 0.5;
+  background-color: @light-gray;
+  padding: 20px 0;
+  border-bottom: 3px @lime-green solid;
 }
 
-#headshot-container, #about-me {
+#headshot, #about-me {
   width: 100%;
   text-align: center;
 }
 
+#headshot-container img {
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+#about-me header {
+  padding-bottom: 20px;
+}
+
 @media (min-width: @tablet-width) {
-  #headshot-container, #about-me {
+  #headshot, #about-me {
     .two-column();
   }
+
 }
