@@ -1,13 +1,27 @@
 #portfolio {
   text-align: center;
+  color: @dark-gray;
 }
 
 .column {
   width: 100%;
 }
 
+.portfolio-item {
+  text-decoration: none;
+  color: @dark-gray;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .column {
     .two-column();
+  }
+  .portfolio-img {
+    width: 90%;
+    max-width: 308px;
+    height: auto;
   }
 }
