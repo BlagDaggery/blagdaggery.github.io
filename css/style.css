@@ -1,23 +1,53 @@
-#header-container {
+#header {
   background-color: #2a2d34;
 }
-#header-content {
+#header-container {
   width: 90%;
   margin: auto;
   max-width: 1024px;
 }
-#header-content #brand,
-#header-content #nav {
-  width: 48%;
+#brand,
+#nav {
+  width: 100%;
   display: inline-block;
+  text-align: center;
 }
-#header-content #brand {
-  text-align: left;
+#brand {
   color: #93dc28;
 }
-#header-content #nav {
-  text-align: right;
+#brand h1 {
+  margin: 20px 0;
+}
+#nav {
   color: #ffffff;
+}
+#nav nav {
+  margin-bottom: 10px;
+}
+.nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 10px;
+  transition: color 0.25s;
+}
+.nav-link:hover {
+  color: #93dc28;
+}
+@media (min-width: 700px) {
+  #brand,
+  #nav {
+    width: 48%;
+    display: inline-block;
+  }
+  #brand {
+    text-align: left;
+  }
+  #nav {
+    text-align: right;
+  }
+  .nav-link {
+    margin: 10px;
+  }
 }
 #hero {
   width: 100%;

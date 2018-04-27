@@ -1,19 +1,53 @@
-#header-container {
+#header {
   background-color: @dark-gray;
 }
 
-#header-content {
+#header-container {
   .content-width();
+}
+#brand, #nav {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+#brand {
+  color: @lime-green;
+}
+
+#brand h1 {
+  margin: 20px 0;
+}
+
+#nav {
+  color: @white;
+}
+
+#nav nav {
+  margin-bottom: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: @white;
+  margin: 10px;
+  transition: color 0.25s;
+  &:hover {
+    color: @lime-green;
+  }
+}
+
+@media (min-width: @tablet-width) {
   #brand, #nav {
     width: 48%;
     display: inline-block;
   }
   #brand {
     text-align: left;
-    color: @lime-green;
   }
   #nav {
     text-align: right;
-    color: @white;
+  }
+  .nav-link {
+    margin: 10px;
   }
 }
