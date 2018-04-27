@@ -1,36 +1,71 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <title>BlagDaggery | Web Developer</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    hello world
-
-    <!--
-      __Header__
-      2 colums
-      Brand on left side
-      Nav on right side (hamburger responsive)
-    -->
-
-    <!--
-      __Hero Shot__
-      background photo with transparent overlay
-      profile picture on left side
-      quick summary on right side
-    -->
-
-    <!--
-      __Portfolio__
-      2-column grid
-      1-column on mobile
-      images expand slightly on hover
-    -->
-
-    <!--
-      __Footer__
-      social links
-    -->
-
+    <section id="header">
+      <div id="header-container">
+        <div id="brand">
+          <h1>BlagDaggery</h1>
+        </div>
+        <div id="nav">
+          <nav>
+            <a class="nav-link" href="#hero">About</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#footer">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <section id="content">
+        <section id="hero">
+          <div id="hero-container">
+            <div id="headshot">
+              <div id="headshot-container">
+                <img src="img/headshot-square-300.jpg"/>
+              </div>
+            </div>
+            <div id="about-me">
+              <header>
+                <h2>Blaine "BlagDaggery" Anderson</h2>
+                <p>Front-End Developer with a background in digital marketing.</p>
+              </header>
+            </div>
+          </div>
+        </section>
+        <section id="portfolio">
+          <h2>Portfolio</h2>
+          <div class="row">
+            <div class="column">
+              <div>
+                <a class="portfolio-item" href="https://blagdaggery.github.io/jammming/">
+                  <img class="portfolio-img" src="img/jammming-tile-v1.png"/>
+                  <h3>Jammming</h3>
+                </a>
+              </div>
+            </div>
+            <div class="column">
+              <div>
+                <a class="portfolio-item" href="https://blagdaggery.github.io/ravenous/">
+                  <img class="portfolio-img" src="img/ravenous-tile-v1.png"/>
+                  <h3>Ravenous</h3>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+    </section>
+    <footer id="footer">
+      <h2>Contact Me</h2>
+      <div>
+        <a class="footer-item" href="https://github.com/BlagDaggery">GitHub</a>
+        <a class="footer-item" href="https://www.linkedin.com/in/blaineaanderson">LinkedIn</a>
+        <a class="footer-item" href="https://twitter.com/BlagDaggery">Twitter</a>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,27 @@
+footer {
+  border-top: @green-border;
+  flex-shrink: 0;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: @dark-gray;
+  color: @white;
+  width: 100%;
+}
+
+.footer-item {
+  display: block;
+  margin: 10px;
+  text-decoration: none;
+  color: @white;
+  transition: color 0.25s;
+  &:hover {
+    color: @lime-green;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .footer-item {
+    display: inline;
+    height: 60px;
+  }
+}
