@@ -20,12 +20,16 @@
   color: #ffffff;
 }
 #hero {
+  width: 100%;
   color: #2a2d34;
-}
-#overlay {
   background-color: #e3e3e3;
-  padding: 20px 0;
   border-bottom: 3px #93dc28 solid;
+}
+#hero-container {
+  width: 90%;
+  margin: auto;
+  max-width: 1024px;
+  padding: 20px 0;
 }
 #headshot,
 #about-me {
@@ -110,9 +114,4 @@ body {
   flex: 1 0 auto;
   width: 100%;
   margin: 0 auto;
-}
-#content #content-container {
-  width: 90%;
-  margin: auto;
-  max-width: 1024px;
 }
