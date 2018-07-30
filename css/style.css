@@ -62,7 +62,7 @@
   padding: 20px 0;
 }
 #headshot,
-#about-me {
+#welcome-section {
   width: 100%;
   text-align: center;
 }
@@ -70,12 +70,12 @@
   vertical-align: middle;
   border-radius: 50%;
 }
-#about-me header {
+#welcome-section header {
   padding-bottom: 20px;
 }
 @media (min-width: 700px) {
   #headshot,
-  #about-me {
+  #welcome-section {
     width: 48%;
     display: inline-block;
   }
