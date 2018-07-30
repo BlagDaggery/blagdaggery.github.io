@@ -80,18 +80,18 @@
     display: inline-block;
   }
 }
-#portfolio {
+#projects {
   text-align: center;
   color: #2a2d34;
 }
 .column {
   width: 100%;
 }
-.portfolio-item {
+.project-tile {
   text-decoration: none;
   color: #2a2d34;
 }
-.portfolio-item:hover {
+.project-tile:hover {
   text-decoration: underline;
 }
 @media (min-width: 700px) {
