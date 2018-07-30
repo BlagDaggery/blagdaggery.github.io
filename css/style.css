@@ -24,7 +24,10 @@
   background-color: #e3e3e3;
   grid-area: welcome-section;
   text-align: center;
-  min-height: 100vh;
+  height: 100vh;
+}
+#welcome-section header {
+  padding-top: 30vh;
 }
 #projects {
   text-align: center;
