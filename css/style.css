@@ -18,37 +18,15 @@
   color: #93dc28;
   text-decoration: underline;
 }
-#hero {
+#welcome-section {
   width: 100%;
   color: #2a2d34;
   background-color: #e3e3e3;
   border-bottom: 3px #93dc28 solid;
-  grid-area: hero;
-}
-#hero-container {
-  width: 90%;
-  margin: auto;
-  max-width: 1024px;
-  padding: 20px 0;
-}
-#headshot,
-#welcome-section {
-  width: 100%;
+  grid-area: welcome-section;
   text-align: center;
-}
-#headshot-container img {
-  vertical-align: middle;
-  border-radius: 50%;
-}
-#welcome-section header {
-  padding-bottom: 20px;
-}
-@media (min-width: 700px) {
-  #headshot,
-  #welcome-section {
-    width: 48%;
-    display: inline-block;
-  }
+  min-height: 100vh;
+  top: 0;
 }
 #projects {
   text-align: center;
@@ -110,5 +88,5 @@ body {
   font-family: 'Roboto', sans-serif;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "navbar" "hero" "projects" "footer";
+  grid-template-areas: "navbar" "welcome-section" "projects" "footer";
 }
