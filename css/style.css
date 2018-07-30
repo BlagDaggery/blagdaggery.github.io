@@ -22,11 +22,9 @@
   width: 100%;
   color: #2a2d34;
   background-color: #e3e3e3;
-  border-bottom: 3px #93dc28 solid;
   grid-area: welcome-section;
   text-align: center;
   min-height: 100vh;
-  top: 0;
 }
 #projects {
   text-align: center;
