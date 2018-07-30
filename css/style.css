@@ -1,54 +1,22 @@
-#header {
-  background-color: #2a2d34;
+#navbar {
   grid-area: header;
-}
-#header-container {
-  width: 90%;
-  margin: auto;
-  max-width: 1024px;
-}
-#brand,
-#nav {
-  width: 100%;
-  display: inline-block;
-  text-align: center;
-}
-#brand {
-  color: #93dc28;
-}
-#brand h1 {
-  margin: 20px 0;
-}
-#nav {
+  background-color: #2a2d34;
   color: #ffffff;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  padding: 10px;
 }
-#nav nav {
-  margin-bottom: 10px;
-}
-.nav-link {
+#navbar .nav-link {
+  margin: 10px;
   text-decoration: none;
   color: #ffffff;
-  margin: 10px;
-  transition: color 0.25s;
+  transition: all 0.25s ease-out;
 }
-.nav-link:hover {
+#navbar .nav-link:hover,
+#navbar .nav-link:focus {
   color: #93dc28;
-}
-@media (min-width: 700px) {
-  #brand,
-  #nav {
-    width: 48%;
-    display: inline-block;
-  }
-  #brand {
-    text-align: left;
-  }
-  #nav {
-    text-align: right;
-  }
-  .nav-link {
-    margin: 10px;
-  }
+  text-decoration: underline;
 }
 #hero {
   width: 100%;
@@ -140,8 +108,6 @@ body {
   margin: 0;
   height: 100%;
   font-family: 'Roboto', sans-serif;
-}
-#grid-layout {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "header" "hero" "projects" "footer";
