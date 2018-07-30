@@ -11,13 +11,12 @@ html, body {
   font-family: 'Roboto', sans-serif;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-#content {
-  flex: 1 0 auto;
-  width: 100%;
-  margin: 0 auto;
+#grid-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "hero"
+    "projects"
+    "footer";
 }

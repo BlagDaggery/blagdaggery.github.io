@@ -1,5 +1,6 @@
 #header {
   background-color: #2a2d34;
+  grid-area: header;
 }
 #header-container {
   width: 90%;
@@ -54,6 +55,7 @@
   color: #2a2d34;
   background-color: #e3e3e3;
   border-bottom: 3px #93dc28 solid;
+  grid-area: hero;
 }
 #hero-container {
   width: 90%;
@@ -83,6 +85,7 @@
 #projects {
   text-align: center;
   color: #2a2d34;
+  grid-area: projects;
 }
 .column {
   width: 100%;
@@ -106,6 +109,7 @@
   }
 }
 footer {
+  grid-area: footer;
   border-top: 3px #93dc28 solid;
   flex-shrink: 0;
   padding-bottom: 20px;
@@ -137,12 +141,8 @@ body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
 }
-body {
-  display: flex;
-  flex-direction: column;
-}
-#content {
-  flex: 1 0 auto;
-  width: 100%;
-  margin: 0 auto;
+#grid-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "hero" "projects" "footer";
 }
