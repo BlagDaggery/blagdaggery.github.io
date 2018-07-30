@@ -1,5 +1,5 @@
 #navbar {
-  grid-area: header;
+  grid-area: navbar;
   background-color: #2a2d34;
   color: #ffffff;
   text-align: center;
@@ -110,5 +110,5 @@ body {
   font-family: 'Roboto', sans-serif;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "header" "hero" "projects" "footer";
+  grid-template-areas: "navbar" "hero" "projects" "footer";
 }
