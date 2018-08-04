@@ -19,15 +19,17 @@
   text-decoration: underline;
 }
 #welcome-section {
+  background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)), url(../img/rock-stack-min.jpg) no-repeat center center;
+  background-size: cover;
   width: 100%;
   color: #2a2d34;
-  background-color: #e3e3e3;
   grid-area: welcome-section;
   text-align: center;
   height: 100vh;
 }
 #welcome-section header {
-  padding-top: 30vh;
+  color: #ffffff;
+  margin-top: 30vh;
 }
 #projects {
   text-align: center;
