@@ -1,0 +1,19 @@
+#navbar {
+  z-index: 1;
+  grid-area: navbar;
+  background-color: @dark-gray;
+  color: @white;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  .nav-link {
+    margin: 10px;
+    text-decoration: none;
+    color: @white;
+    transition: all 0.25s ease-out;
+    &:hover, &:focus {
+      color: @lime-green;
+    }
+  }
+}

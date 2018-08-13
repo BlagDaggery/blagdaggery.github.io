@@ -1,111 +1,81 @@
-#header {
+#navbar {
+  z-index: 1;
+  grid-area: navbar;
   background-color: #2a2d34;
-}
-#header-container {
-  width: 90%;
-  margin: auto;
-  max-width: 1024px;
-}
-#brand,
-#nav {
-  width: 100%;
-  display: inline-block;
+  color: #ffffff;
   text-align: center;
+  position: sticky;
+  top: 0;
+  padding: 10px;
 }
-#brand {
-  color: #93dc28;
-}
-#brand h1 {
-  margin: 20px 0;
-}
-#nav {
-  color: #ffffff;
-}
-#nav nav {
-  margin-bottom: 10px;
-}
-.nav-link {
-  text-decoration: none;
-  color: #ffffff;
+#navbar .nav-link {
   margin: 10px;
-  transition: color 0.25s;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.25s ease-out;
 }
-.nav-link:hover {
+#navbar .nav-link:hover,
+#navbar .nav-link:focus {
   color: #93dc28;
 }
-@media (min-width: 700px) {
-  #brand,
-  #nav {
-    width: 48%;
-    display: inline-block;
-  }
-  #brand {
-    text-align: left;
-  }
-  #nav {
-    text-align: right;
-  }
-  .nav-link {
-    margin: 10px;
-  }
-}
-#hero {
+#welcome-section {
+  background: linear-gradient(rgba(42, 45, 52, 0.8), rgba(42, 45, 52, 0.8)), url(../img/rock-stack-min.jpg) no-repeat center center;
+  background-size: cover;
   width: 100%;
   color: #2a2d34;
-  background-color: #e3e3e3;
-  border-bottom: 3px #93dc28 solid;
-}
-#hero-container {
-  width: 90%;
-  margin: auto;
-  max-width: 1024px;
-  padding: 20px 0;
-}
-#headshot,
-#about-me {
-  width: 100%;
+  grid-area: welcome-section;
   text-align: center;
+  height: 100vh;
 }
-#headshot-container img {
-  vertical-align: middle;
-  border-radius: 50%;
+#welcome-section header {
+  color: #ffffff;
+  margin-top: 30vh;
 }
-#about-me header {
-  padding-bottom: 20px;
-}
-@media (min-width: 700px) {
-  #headshot,
-  #about-me {
-    width: 48%;
-    display: inline-block;
-  }
-}
-#portfolio {
+#projects {
   text-align: center;
   color: #2a2d34;
+  border-top: 3px #93dc28 solid;
+  grid-area: projects;
 }
-.column {
-  width: 100%;
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
 }
-.portfolio-item {
-  text-decoration: none;
-  color: #2a2d34;
+.container {
+  position: relative;
 }
-.portfolio-item:hover {
-  text-decoration: underline;
+.portfolio-img {
+  opacity: 1;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
-@media (min-width: 700px) {
-  .column {
-    width: 48%;
-    display: inline-block;
-  }
-  .portfolio-img {
-    width: 90%;
-    max-width: 308px;
-    height: auto;
-  }
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container:hover .portfolio-img {
+  opacity: 0.3;
+}
+.container:hover .middle {
+  opacity: 1;
+}
+.text {
+  background-color: #2a2d34;
+  color: #ffffff;
+  padding: 16px 32px;
+}
+.project-tile {
+  margin-bottom: 30px;
 }
 footer {
+  grid-area: footer;
   border-top: 3px #93dc28 solid;
   flex-shrink: 0;
   padding-bottom: 20px;
@@ -113,6 +83,9 @@ footer {
   background-color: #2a2d34;
   color: #ffffff;
   width: 100%;
+}
+.headshot {
+  margin-bottom: 20px;
 }
 .footer-item {
   display: block;
@@ -130,19 +103,82 @@ footer {
     height: 60px;
   }
 }
+h1 {
+  font-size: 2em;
+  line-height: 1.25;
+}
+@media (min-width: 43.75em) {
+  h1 {
+    font-size: 2.5em;
+    line-height: 1.125;
+  }
+}
+@media (min-width: 56.25em) {
+  h1 {
+    font-size: 3em;
+    line-height: 1.05;
+  }
+}
+h2 {
+  font-size: 1.625em;
+  line-height: 1.15384615;
+}
+@media (min-width: 43.75em) {
+  h2 {
+    font-size: 2em;
+    line-height: 1.25;
+  }
+}
+@media (min-width: 56.25em) {
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.25;
+  }
+}
+h3 {
+  font-size: 1.375em;
+  line-height: 1.13636364;
+}
+@media (min-width: 43.75em) {
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
+}
+@media (min-width: 56.25em) {
+  h3 {
+    font-size: 1.75em;
+    line-height: 1.25;
+  }
+}
+h4 {
+  font-size: 1.125em;
+  line-height: 1.11111111;
+}
+@media (min-width: 43.75em) {
+  h4 {
+    line-height: 1.22222222;
+  }
+}
+blockquote {
+  font-size: 1.25em;
+  line-height: 1.25;
+}
+@media (min-width: 43.75em) {
+  blockquote {
+    font-size: 1.5em;
+    line-height: 1.45833333;
+  }
+}
 html,
 body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+  font-size-adjust: 0.5;
   padding: 0;
   margin: 0;
   height: 100%;
-  font-family: 'Roboto', sans-serif;
-}
-body {
-  display: flex;
-  flex-direction: column;
-}
-#content {
-  flex: 1 0 auto;
-  width: 100%;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "navbar" "welcome-section" "projects" "footer";
 }

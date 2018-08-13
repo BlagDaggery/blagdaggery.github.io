@@ -2,70 +2,277 @@
 <html>
   <head>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Blaine Anderson AKA BlagDaggery is a front-end developer with a background in digital marketing.">
     <title>BlagDaggery | Web Developer</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+    #navbar {
+      z-index: 1;
+      grid-area: navbar;
+      background-color: #2a2d34;
+      color: #ffffff;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      padding: 10px;
+    }
+    #navbar .nav-link {
+      margin: 10px;
+      text-decoration: none;
+      color: #ffffff;
+      transition: all 0.25s ease-out;
+    }
+    #navbar .nav-link:hover,
+    #navbar .nav-link:focus {
+      color: #93dc28;
+    }
+    #welcome-section {
+      background: linear-gradient(rgba(42, 45, 52, 0.8), rgba(42, 45, 52, 0.8)), url("img/rock-stack-min.jpg") no-repeat center center;
+      background-size: cover;
+      width: 100%;
+      color: #2a2d34;
+      grid-area: welcome-section;
+      text-align: center;
+      height: 100vh;
+    }
+    #welcome-section header {
+      color: #ffffff;
+      margin-top: 30vh;
+    }
+    #projects {
+      text-align: center;
+      color: #2a2d34;
+      border-top: 3px #93dc28 solid;
+      grid-area: projects;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    }
+    .container {
+      position: relative;
+    }
+    .portfolio-img {
+      opacity: 1;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+    .middle {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .container:hover .portfolio-img {
+      opacity: 0.3;
+    }
+    .container:hover .middle {
+      opacity: 1;
+    }
+    .text {
+      background-color: #2a2d34;
+      color: #ffffff;
+      padding: 16px 32px;
+    }
+    .project-tile {
+      margin-bottom: 30px;
+    }
+    footer {
+      grid-area: footer;
+      border-top: 3px #93dc28 solid;
+      flex-shrink: 0;
+      padding-bottom: 20px;
+      text-align: center;
+      background-color: #2a2d34;
+      color: #ffffff;
+      width: 100%;
+    }
+    .headshot {
+      margin-bottom: 20px;
+    }
+    .footer-item {
+      display: block;
+      margin: 10px;
+      text-decoration: none;
+      color: #ffffff;
+      transition: color 0.25s;
+    }
+    .footer-item:hover {
+      color: #93dc28;
+    }
+    @media (min-width: 700px) {
+      .footer-item {
+        display: inline;
+        height: 60px;
+      }
+    }
+    h1 {
+      font-size: 2em;
+      line-height: 1.25;
+    }
+    @media (min-width: 43.75em) {
+      h1 {
+        font-size: 2.5em;
+        line-height: 1.125;
+      }
+    }
+    @media (min-width: 56.25em) {
+      h1 {
+        font-size: 3em;
+        line-height: 1.05;
+      }
+    }
+    h2 {
+      font-size: 1.625em;
+      line-height: 1.15384615;
+    }
+    @media (min-width: 43.75em) {
+      h2 {
+        font-size: 2em;
+        line-height: 1.25;
+      }
+    }
+    @media (min-width: 56.25em) {
+      h2 {
+        font-size: 2.25em;
+        line-height: 1.25;
+      }
+    }
+    h3 {
+      font-size: 1.375em;
+      line-height: 1.13636364;
+    }
+    @media (min-width: 43.75em) {
+      h3 {
+        font-size: 1.5em;
+        line-height: 1.25;
+      }
+    }
+    @media (min-width: 56.25em) {
+      h3 {
+        font-size: 1.75em;
+        line-height: 1.25;
+      }
+    }
+    h4 {
+      font-size: 1.125em;
+      line-height: 1.11111111;
+    }
+    @media (min-width: 43.75em) {
+      h4 {
+        line-height: 1.22222222;
+      }
+    }
+    blockquote {
+      font-size: 1.25em;
+      line-height: 1.25;
+    }
+    @media (min-width: 43.75em) {
+      blockquote {
+        font-size: 1.5em;
+        line-height: 1.45833333;
+      }
+    }
+    html,
+    body {
+      font-family: 'Roboto', sans-serif;
+      font-size: 100%;
+      font-size-adjust: 0.5;
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: "navbar" "welcome-section" "projects" "footer";
+    }
+
+    /* Put compiled CSS here and comment out the link to my css file */
+    </style>
   </head>
   <body>
-    <section id="header">
-      <div id="header-container">
-        <div id="brand">
-          <h1>BlagDaggery</h1>
+    <nav id="navbar">
+      <a class="nav-link" href="#welcome-section">About</a>
+      <a class="nav-link" href="#projects">Portfolio</a>
+      <a class="nav-link" href="#footer">Contact</a>
+    </nav>
+    <section id="welcome-section">
+      <header>
+        <h1>Blaine Anderson</h1>
+        <h2>Front-End Developer</h2>
+      </header>
+    </section>
+    <section id="projects">
+      <h2>Portfolio</h2>
+      <div class="projects-grid">
+        <div class="project-tile" >
+          <div class="container">
+            <a href="https://blagdaggery.github.io/jammming/">
+              <img class="portfolio-img" src="img/jammming-tile.jpg"/>
+              <div class="middle">
+                <div class="text">"Jammming"</div>
+              </div>
+            </a>
+          </div>
         </div>
-        <div id="nav">
-          <nav>
-            <a class="nav-link" href="#hero">About</a>
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-            <a class="nav-link" href="#footer">Contact</a>
-          </nav>
+        <div class="project-tile">
+          <div class="container">
+            <a href="https://blagdaggery.github.io/ravenous/">
+              <img class="portfolio-img" src="img/ravenous-tile.jpg"/>
+              <div class="middle">
+                <div class="text">"Ravenous"</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="project-tile">
+          <div class="container">
+            <a href="https://blagdaggery.github.io/technical-documentation/">
+              <img class="portfolio-img" src="img/javascript-objects.jpg"/>
+              <div class="middle">
+                <div class="text">JavaScript Object Tutorial</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="project-tile">
+          <div class="container">
+            <a href="https://blagdaggery.github.io/survey-form/">
+              <img class="portfolio-img" src="img/spades-tournament.jpg"/>
+              <div class="middle">
+                <div class="text">Spades Tournament Registration Form</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="project-tile">
+          <div class="container">
+            <a href="https://blagdaggery.github.io/portland-head-light/">
+              <img class="portfolio-img" src="img/portland-head-light.jpg"/>
+              <div class="middle">
+                <div class="text">Portland Head Light Tribute</div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
-    </section>
-    <section id="content">
-        <section id="hero">
-          <div id="hero-container">
-            <div id="headshot">
-              <div id="headshot-container">
-                <img src="img/headshot-square-300.jpg"/>
-              </div>
-            </div>
-            <div id="about-me">
-              <header>
-                <h2>Blaine "BlagDaggery" Anderson</h2>
-                <p>Front-End Developer with a background in digital marketing.</p>
-              </header>
-            </div>
-          </div>
-        </section>
-        <section id="portfolio">
-          <h2>Portfolio</h2>
-          <div class="row">
-            <div class="column">
-              <div>
-                <a class="portfolio-item" href="https://blagdaggery.github.io/jammming/">
-                  <img class="portfolio-img" src="img/jammming-tile-v1.png"/>
-                  <h3>Jammming</h3>
-                </a>
-              </div>
-            </div>
-            <div class="column">
-              <div>
-                <a class="portfolio-item" href="https://blagdaggery.github.io/ravenous/">
-                  <img class="portfolio-img" src="img/ravenous-tile-v1.png"/>
-                  <h3>Ravenous</h3>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
     </section>
     <footer id="footer">
       <h2>Contact Me</h2>
       <div>
-        <a class="footer-item" href="https://github.com/BlagDaggery">GitHub</a>
-        <a class="footer-item" href="https://www.linkedin.com/in/blaineaanderson">LinkedIn</a>
-        <a class="footer-item" href="https://twitter.com/BlagDaggery">Twitter</a>
+        <img class="headshot" src="img/headshot-square-300.jpg"/>
+      </div>
+      <div>
+        <a class="footer-item" target="_blank" id="profile-link" href="https://github.com/BlagDaggery">GitHub</a>
+        <a class="footer-item" target="_blank" href="https://www.linkedin.com/in/blaineaanderson">LinkedIn</a>
+        <a class="footer-item" target="_blank" href="https://twitter.com/BlagDaggery">Twitter</a>
       </div>
     </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
