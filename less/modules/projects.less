@@ -28,24 +28,30 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
 
-.container:hover .portfolio-img {
-  opacity: 0.3;
-}
+.container {
+  a:hover, a:focus {
+    .portfolio-img {
+      opacity: 0.3;
+    }
+  } 
+} 
 
-.container:hover .middle {
-  opacity: 1;
-}
+.container {
+  a:hover, a:focus {
+    .middle {
+      opacity: 1;
+    }
+  } 
+} 
 
 .text {
   background-color: @dark-gray;
   color: @white;
   padding: 16px 32px;
 }
-
 
 .project-tile {
   margin-bottom: 30px;

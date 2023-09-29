@@ -1,7 +1,7 @@
 # Blaine "BlagDaggery" Anderson
 This is my portfolio of web development projects.
 
-"BlagDaggery" is a nickname my friends gave me in college. I sounds a little strange, but it makes for a decent Twitter handle!
+"BlagDaggery" is a nickname my friends gave me in college. I sounds a little strange, but it makes for a decent GitHub handle!
 
 ## Feedback
 I welcome feedback on my code!
