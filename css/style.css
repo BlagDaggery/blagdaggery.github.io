@@ -41,32 +41,42 @@
 }
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(375px, 580px));
+  gap: 2.5rem 2.5rem;
+  justify-content: center;
+  justify-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 .container {
   position: relative;
 }
 .portfolio-img {
-  opacity: 1;
+  opacity: 0.7;
   height: auto;
   transition: 0.5s ease;
-  backface-visibility: hidden;
+  display: block;
+  margin: 0 auto;
 }
 .middle {
   transition: 0.5s ease;
-  opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  min-width: 75%;
 }
-.container a:hover .portfolio-img,
-.container a:focus .portfolio-img {
+.container .project-link {
+  display: block;
+  position: relative;
+}
+.container .project-link:hover .portfolio-img,
+.container .project-link:focus .portfolio-img {
   opacity: 0.3;
 }
-.container a:hover .middle,
-.container a:focus .middle {
+.container .project-link:hover .middle,
+.container .project-link:focus .middle {
   opacity: 1;
 }
 .text {
@@ -185,6 +195,20 @@ blockquote {
 }
 p {
   font-size: 1rem;
+}
+.p-small {
+  font-size: 0.875rem;
+}
+.p-medium {
+  font-size: 1.125rem;
+}
+.bold {
+  font-weight: 700;
+}
+.highlight {
+  background-color: #81229F;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
 }
 html,
 body {
