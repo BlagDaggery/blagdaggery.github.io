@@ -1,6 +1,5 @@
 #navbar {
   z-index: 1;
-  grid-area: navbar;
   background-color: #2a2d34;
   color: #fff;
   text-align: center;
@@ -25,23 +24,25 @@
   background-size: cover;
   width: 100%;
   color: #2a2d34;
-  grid-area: welcome-section;
   text-align: center;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #welcome-section header {
   color: #fff;
-  margin-top: 30vh;
 }
 #projects {
   text-align: center;
   color: #2a2d34;
   border-top: 3px #93dc28 solid;
-  grid-area: projects;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(375px, 580px));
+  grid-template-columns: repeat(auto-fill, minmax(340px, 580px));
   gap: 2.5rem 2.5rem;
   justify-content: center;
   justify-items: center;
@@ -57,6 +58,7 @@
   transition: 0.5s ease;
   display: block;
   margin: 0 auto;
+  max-width: 100%;
 }
 .middle {
   transition: 0.5s ease;
@@ -88,7 +90,6 @@
   margin-bottom: 30px;
 }
 footer {
-  grid-area: footer;
   border-top: 3px #93dc28 solid;
   flex-shrink: 0;
   padding-bottom: 1.25rem;
@@ -216,9 +217,5 @@ body {
   font-size: 100%;
   padding: 0;
   margin: 0;
-  height: 100%;
   scroll-behavior: smooth;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "navbar" "welcome-section" "projects" "footer";
 }

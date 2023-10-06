@@ -2,12 +2,13 @@
   text-align: center;
   color: @dark-gray;
   border-top: @green-border;
-  grid-area: projects;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(375px, 580px));
+  grid-template-columns: repeat(auto-fill, minmax(340px, 580px));
   gap: 2.5rem 2.5rem;
   justify-content: center;
   justify-items: center;
@@ -25,6 +26,7 @@
   transition: .5s ease;
   display: block;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .middle {
