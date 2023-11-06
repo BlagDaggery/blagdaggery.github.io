@@ -95,7 +95,12 @@ p {
   font-weight: 700;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: @green-dark;
 }
 
@@ -134,33 +139,39 @@ a {
 }
 
 @media(prefers-color-scheme: dark) {
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: @gray;
   }
-  
+
   p {
     color: @gray;
-  }  
+  }
 
   a {
     transition: color 0.25s;
-  
+
     &:link {
       color: @green-soft;
     }
-  
+
     &:visited {
       color: @green-soft;
     }
-  
+
     &:focus {
       color: @green-soft;
     }
-  
+
     &:hover {
       color: @gray;
     }
-  
+
     &:active {
       color: @gray;
     }
