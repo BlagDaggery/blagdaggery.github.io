@@ -1,20 +1,31 @@
 #navbar {
   z-index: 1;
-  background-color: @dark-gray;
-  color: @white;
-  text-align: center;
+  background-color: @white;
+  
   position: sticky;
   top: 0;
   padding: 1rem;
-  border-bottom: @green-border;
+  height: 100vh;
+  box-sizing: border-box;
+  box-shadow: 1px 0px 5px @gray;
+
   .nav-link {
+    display: inline-block;
     font-size: 1.5rem;
     margin: 10px;
     text-decoration: none;
-    color: @white;
+    color: @green-dark;
     transition: all 0.25s ease-out;
+    border-bottom: 2px solid transparent;
+    font-weight: bold;
     &:hover, &:focus {
-      color: @lime-green;
+      border-color: @green-dark;
     }
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .navbar-container {
+    display: none;
   }
 }

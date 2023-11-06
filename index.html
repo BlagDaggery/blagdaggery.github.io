@@ -7,91 +7,89 @@
   <meta name="description" content="Blaine Anderson AKA BlagDaggery is a front-end developer.">
   <title>BlagDaggery | Blaine Anderson | Front-End Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
-  <nav id="navbar">
-    <a class="nav-link" href="#welcome-section">Home</a>
-    <a class="nav-link" href="#projects">Projects</a>
-    <a class="nav-link" href="#footer">About Me</a>
-  </nav>
-  <section id="welcome-section">
-    <header>
-      <h1>Blaine Anderson</h1>
-      <h2>Front-End Developer</h2>
-    </header>
-  </section>
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <div class="project-tile">
-        <div class="container">
-          <a class="project-link" href="/weather-app/">
-            <img alt="" class="portfolio-img" src="img/cliffs.jpg" />
-            <div class="middle">
-              <h3 class="text">Weather App</h3>
-            </div>
-          </a>
-          <p class="p-medium">A web application that will fetch local weather data from an API and display it to the user.</p>
-          <p class="p-small"><span class="bold">Technology Used:</span> React JS | TypeScript | GeolocationPosition | Fetch API | Vite</p>
-        </div>
+  <div class="navbar-container">
+    <nav id="navbar">
+      <a class="nav-link" href="#welcome-section">Home</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#footer">About Me</a>
+    </nav>
+  </div>
+  <div class="section-container">
+    <section id="welcome-section">
+      <header>
+        <h1><span class="b-highlight">B</span>laine Anderson</h1>
+        <h2>Front-End Developer</h2>
+        <h3>Strategic Thinker | Precise Coder | Brings Clarity to Complex UI Problems</h3>
+      </header>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-container">
+        <h3 class="text"><a class="project-link" href="/weather-app/">Weather App</a></h3>
+        <p class="p-medium">A web application that will fetch local weather data from an API and display it to the user.</p>
+        <p class="p-small"><span class="bold">Technology Used:</span> React JS | TypeScript | GeolocationPosition | Fetch API | Vite</p>
       </div>
-      <div class="project-tile">
-        <div class="container">
-          <a class="project-link" href="https://github.com/BlagDaggery/guided-prayer">
-            <img alt="" class="portfolio-img" src="img/lake-sunrise.jpg" />
-            <div class="middle">
-              <h3 class="text">Guided Prayer App</h3>
-            </div>
-          </a>
-          <p class="p-medium">A web application that will guide a user through a time of prayer based on the A.C.T.S. method.</p>
-          <p class="p-small"><span class="bold">Technology Used:</span> JavaScript | Tone JS | Web Audio API</p>
-          <span class="p-small highlight">Work in Progress</span>
-        </div>
-      </div>      
-    </div>
-  </section>
-  <footer id="footer">
-    <h2>About Me</h2>
-    <div class="headshot-container">
-      <img alt="" class="headshot" src="img/blaine-anderson-headshot.jpg" />
-    </div>
-    <div>
-      <a class="footer-item" id="profile-link" href="https://github.com/BlagDaggery">GitHub</a>
-      <a class="footer-item" href="https://www.linkedin.com/in/blaineaanderson">LinkedIn</a>
-    </div>
-    <div class="bio">
-      <h3>Name</h3>
-      <p>Blaine Anderson</p>
-      <h3>Software Development Experience</h3>
-      <p>5 Years</p>
-      <h3>Total Work Experience</h3>
-      <p>10 Years</p>
-      <h3>Skills & Knowledge</h3>
-      <p>JavaScript</p>
-      <p>jQuery</p>
-      <p>HTML</p>
-      <p>CSS</p>
-      <p>SCSS/SASS/Less</p>
-      <p>Gulp.js</p>
-      <p>Git Version Control</p>
-      <p>Web Accessibility Tools</p>
-      <p>JavaScript Frameworks</p>
-      <p>.NET MVC Framework</p>
-      <h3>Interests & Hobbies</h3>
-      <p>My wife & two kids</p>
-      <p>Playing music</p>
-      <p>(singing, acoustic guitar, electric bass, occasional beatboxing, and I like to pretend I'm a drummer)</p>
-      <p>Sci-Fi/Fantasy Media</p>
-      <p>Cycling, Public Transit, and Urbanism</p>
-      <p>These new cast iron skillets I bought</p>
-      <p>(dang...why did it take me so long to start using cast iron?)</p>
-    </div>
-  </footer>
+      <div class="project-container">
+        <h3 class="text"><a class="project-link" href="https://github.com/BlagDaggery/gift-logger-react">Gift Logger</a></h3>
+        <span class="p-small highlight">Work in Progress</span>
+        <p class="p-medium">A web application for people who are bad at gift giving. Keep a record of the gifts you've given people and how well it was received, so you can be better informed for the next occasion.</p>
+        <p class="p-small"><span class="bold">Technology Used:</span> React JS | TypeScript | Vite</p>
+      </div>
+      <div class="project-container">
+        <h3 class="text"><a class="project-link" href="https://github.com/BlagDaggery/guided-prayer">Guided Prayer App</a></h3>
+        <span class="p-small highlight">Work in Progress</span>
+        <p class="p-medium">A web application that will guide a user through a time of prayer based on the A.C.T.S. method.</p>
+        <p class="p-small"><span class="bold">Technology Used:</span> JavaScript | Tone JS | Web Audio API</p>
+      </div>
+    </section>
+    <footer id="footer">
+      <h2>About Me</h2>
+      <div class="headshot-container">
+        <img alt="" class="headshot" src="img/blaine-anderson-headshot.jpg" />
+      </div>
+      <div>
+        <a class="footer-item" id="profile-link" href="https://github.com/BlagDaggery">GitHub</a>
+        <a class="footer-item" href="https://www.linkedin.com/in/blaineaanderson">LinkedIn</a>
+      </div>
+      <div class="bio">
+        <h3>Name</h3>
+        <p>Blaine Anderson</p>
+        <h3>Software Development Experience</h3>
+        <p>5 Years</p>
+        <h3>Total Work Experience</h3>
+        <p>10 Years</p>
+        <h3>Skills & Knowledge</h3>
+        <p>JavaScript</p>
+        <p>TypeScript</p>
+        <p>React JS</p>
+        <p>jQuery</p>
+        <p>Gulp.js</p>
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>SCSS/SASS/Less</p>
+        <p>Git Version Control</p>
+        <p>Web Accessibility Tools</p>
+        <p>JavaScript Frameworks</p>
+        <p>.NET MVC Framework</p>
+        <h3>Interests & Hobbies</h3>
+        <p>My wife & two kids</p>
+        <p>Playing music</p>
+        <p>(singing, acoustic guitar, electric bass, piano (barely), occasional beatboxing, and I like to pretend I'm a drummer)</p>
+        <p>Sci-Fi/Fantasy Media</p>
+        <p>Cycling, Public Transit, and Urbanism</p>
+        <p>These new cast iron skillets I bought</p>
+        <p>(dang...why did it take me so long to start using cast iron?)</p>
+      </div>
+    </footer>
+  </div>
+
 </body>
 
 </html>

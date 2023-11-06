@@ -5,10 +5,39 @@
 @import "modules/footer";
 @import "modules/typography";
 
-html, body {
-  font-family: 'Roboto', sans-serif;
+html {
+  font-family: 'Cabin', sans-serif;
   font-size: 100%;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+
+  body {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar-container {
+    flex: 0 0 200px;
+    box-sizing: border-box;
+  }
+
+  .section-container {
+    flex: 1 1 auto;
+    box-sizing: border-box;
+  }
+
+  #welcome-section, #projects, #footer {
+    padding: 3rem 1rem;
+    box-sizing: border-box;
+  }
+  
+  @media (min-width: @tablet-width) {
+    #welcome-section, #projects, #footer {
+      padding: 3rem 6rem;
+    }
+  }
 }
