@@ -2,11 +2,7 @@
   width: 100%;  
   display: flex;
   align-items: center;
-  border-bottom: @gray-border;
-
-  header {
-    color: @green-dark;
-  }
+  border-bottom: @gray-light-border;
 
   .b-highlight {
     color: @white;
@@ -20,4 +16,13 @@
   #welcome-section {
     height: 66vh;
   }
+}
+
+@media(prefers-color-scheme: dark) {
+  #welcome-section {
+    border-bottom: @gray-dark-border;
+    .b-highlight {
+      color: @gray;
+    }
+  }   
 }
