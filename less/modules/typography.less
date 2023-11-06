@@ -1,3 +1,11 @@
+h1, h2, h3, h4, h5, h6 {
+  color: @green-dark;
+}
+
+p {
+  color: @black;
+}
+
 h1 {
   font-size: 2rem;
   line-height: 1.25;
@@ -39,6 +47,7 @@ h2 {
 h3 {
   font-size: 1.375rem;
   line-height: 1.13636364;
+  margin-bottom: 0.75rem;
 }
 
 @media (min-width: 43.75rem) {
@@ -95,7 +104,32 @@ p {
 }
 
 .highlight {
-  background-color: @purple;
+  background-color: @purple-dark;
   color: @white;
   padding: 0.25rem 0.5rem;
+}
+
+a {
+  transition: color 0.25s;
+
+  &:link {
+    color: @purple-light;
+  }
+
+  &:visited {
+    color: @purple-dark;
+  }
+
+  &:focus {
+    color: @green-light;
+  }
+
+  &:hover {
+    color: @green-light;
+  }
+
+  &:active {
+    color: @green-light;
+  }
+  
 }

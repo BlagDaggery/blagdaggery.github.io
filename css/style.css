@@ -1,131 +1,85 @@
 #navbar {
   z-index: 1;
-  background-color: #2a2d34;
-  color: #fff;
-  text-align: center;
+  background-color: #ffffff;
   position: sticky;
   top: 0;
   padding: 1rem;
-  border-bottom: 3px #93dc28 solid;
+  height: 100vh;
+  box-sizing: border-box;
+  box-shadow: 1px 0px 5px #b5b5b5;
 }
 #navbar .nav-link {
+  display: inline-block;
   font-size: 1.5rem;
   margin: 10px;
   text-decoration: none;
-  color: #fff;
+  color: #003d1e;
   transition: all 0.25s ease-out;
+  border-bottom: 2px solid transparent;
+  font-weight: bold;
 }
 #navbar .nav-link:hover,
 #navbar .nav-link:focus {
-  color: #93dc28;
+  border-color: #003d1e;
+}
+@media (max-width: 700px) {
+  .navbar-container {
+    display: none;
+  }
 }
 #welcome-section {
-  background: linear-gradient(rgba(42, 45, 52, 0.8), rgba(42, 45, 52, 0.8)), url(../img/rock-stack-min.jpg) no-repeat center center;
-  background-size: cover;
   width: 100%;
-  color: #2a2d34;
-  text-align: center;
-  height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  border-bottom: 1px solid #dcdcdd;
 }
 #welcome-section header {
-  color: #fff;
+  color: #003d1e;
+}
+#welcome-section .b-highlight {
+  color: #ffffff;
+  background-color: #006130;
+  padding: 0 12px;
+  border-radius: 8px;
+}
+@media (min-width: 700px) {
+  #welcome-section {
+    height: 66vh;
+  }
 }
 #projects {
-  text-align: center;
-  color: #2a2d34;
-  border-top: 3px #93dc28 solid;
-  padding: 0 1rem;
-  box-sizing: border-box;
+  border-bottom: 1px solid #dcdcdd;
 }
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 580px));
-  gap: 2.5rem 2.5rem;
-  justify-content: center;
-  justify-items: center;
-  margin: 0 auto;
-  max-width: 1200px;
+#projects .project-container {
+  margin-bottom: 2.5rem;
 }
-.container {
-  position: relative;
-}
-.portfolio-img {
-  opacity: 0.7;
-  height: auto;
-  transition: 0.5s ease;
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-}
-.middle {
-  transition: 0.5s ease;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  min-width: 75%;
-}
-.container .project-link {
-  display: block;
-  position: relative;
-}
-.container .project-link:hover .portfolio-img,
-.container .project-link:focus .portfolio-img {
-  opacity: 0.3;
-}
-.container .project-link:hover .middle,
-.container .project-link:focus .middle {
-  opacity: 1;
-}
-.text {
-  background-color: #2a2d34;
-  color: #fff;
-  padding: 16px 32px;
-}
-.project-tile {
-  margin-bottom: 30px;
-}
-footer {
-  border-top: 3px #93dc28 solid;
-  flex-shrink: 0;
-  padding-bottom: 1.25rem;
-  text-align: center;
-  background-color: #2a2d34;
-  color: #fff;
-  width: 100%;
-}
-.headshot-container {
-  max-width: 375px;
-  margin: 0 auto;
-}
-.headshot {
+#footer .headshot {
   margin-bottom: 1.25rem;
   width: 100%;
   display: block;
 }
-.footer-item {
-  display: block;
+#footer .footer-item {
   font-size: 1.25rem;
-  margin: 0.75rem;
-  color: #fff;
-  transition: color 0.25s;
-}
-.footer-item:hover {
-  color: #93dc28;
+  margin: 0.75rem 0.75rem 0.75rem 0;
 }
 @media (min-width: 700px) {
-  .footer-item {
-    display: inline;
+  #footer .headshot-container {
+    max-width: 500px;
+  }
+  #footer .bio {
+    max-width: 1000px;
   }
 }
-.bio {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 0 1rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #003d1e;
+}
+p {
+  color: #130303;
 }
 h1 {
   font-size: 2rem;
@@ -162,6 +116,7 @@ h2 {
 h3 {
   font-size: 1.375rem;
   line-height: 1.13636364;
+  margin-bottom: 0.75rem;
 }
 @media (min-width: 43.75rem) {
   h3 {
@@ -207,15 +162,60 @@ p {
   font-weight: 700;
 }
 .highlight {
-  background-color: #81229F;
-  color: #fff;
+  background-color: #382633;
+  color: #ffffff;
   padding: 0.25rem 0.5rem;
 }
-html,
-body {
-  font-family: 'Roboto', sans-serif;
+a {
+  transition: color 0.25s;
+}
+a:link {
+  color: #6c4b5e;
+}
+a:visited {
+  color: #382633;
+}
+a:focus {
+  color: #006130;
+}
+a:hover {
+  color: #006130;
+}
+a:active {
+  color: #006130;
+}
+html {
+  font-family: 'Cabin', sans-serif;
   font-size: 100%;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+}
+html body {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+html .navbar-container {
+  flex: 0 0 200px;
+  box-sizing: border-box;
+}
+html .section-container {
+  flex: 1 1 auto;
+  box-sizing: border-box;
+}
+html #welcome-section,
+html #projects,
+html #footer {
+  padding: 3rem 1rem;
+  box-sizing: border-box;
+}
+@media (min-width: 700px) {
+  html #welcome-section,
+  html #projects,
+  html #footer {
+    padding: 3rem 6rem;
+  }
 }
