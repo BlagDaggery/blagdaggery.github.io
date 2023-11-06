@@ -27,14 +27,24 @@
     display: none;
   }
 }
+@media (prefers-color-scheme: dark) {
+  #navbar {
+    background-color: #676767;
+    box-shadow: none;
+  }
+  #navbar .nav-link {
+    color: #ffffff;
+  }
+  #navbar .nav-link:hover,
+  #navbar .nav-link:focus {
+    border-color: #ffffff;
+  }
+}
 #welcome-section {
   width: 100%;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #dcdcdd;
-}
-#welcome-section header {
-  color: #003d1e;
 }
 #welcome-section .b-highlight {
   color: #ffffff;
@@ -45,6 +55,14 @@
 @media (min-width: 700px) {
   #welcome-section {
     height: 66vh;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  #welcome-section {
+    border-bottom: 1px solid #676767;
+  }
+  #welcome-section .b-highlight {
+    color: #b5b5b5;
   }
 }
 #projects {
@@ -69,17 +87,6 @@
   #footer .bio {
     max-width: 1000px;
   }
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #003d1e;
-}
-p {
-  color: #130303;
 }
 h1 {
   font-size: 2rem;
@@ -161,6 +168,17 @@ p {
 .bold {
   font-weight: 700;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #003d1e;
+}
+p {
+  color: #130303;
+}
 .highlight {
   background-color: #382633;
   color: #ffffff;
@@ -183,6 +201,37 @@ a:hover {
 }
 a:active {
   color: #006130;
+}
+@media (prefers-color-scheme: dark) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #b5b5b5;
+  }
+  p {
+    color: #b5b5b5;
+  }
+  a {
+    transition: color 0.25s;
+  }
+  a:link {
+    color: #0AFF85;
+  }
+  a:visited {
+    color: #0AFF85;
+  }
+  a:focus {
+    color: #0AFF85;
+  }
+  a:hover {
+    color: #b5b5b5;
+  }
+  a:active {
+    color: #b5b5b5;
+  }
 }
 html {
   font-family: 'Cabin', sans-serif;
@@ -217,5 +266,10 @@ html #footer {
   html #projects,
   html #footer {
     padding: 3rem 6rem;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #130303;
   }
 }

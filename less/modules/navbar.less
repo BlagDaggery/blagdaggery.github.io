@@ -1,7 +1,6 @@
 #navbar {
   z-index: 1;
   background-color: @white;
-  
   position: sticky;
   top: 0;
   padding: 1rem;
@@ -18,7 +17,9 @@
     transition: all 0.25s ease-out;
     border-bottom: 2px solid transparent;
     font-weight: bold;
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
       border-color: @green-dark;
     }
   }
@@ -27,5 +28,21 @@
 @media (max-width: @tablet-width) {
   .navbar-container {
     display: none;
+  }
+}
+
+@media(prefers-color-scheme: dark) {
+  #navbar {
+    background-color: @gray-dark;
+    box-shadow: none;
+
+    .nav-link {
+      color: @white;
+
+      &:hover,
+      &:focus {
+        border-color: @white;
+      }
+    }
   }
 }
