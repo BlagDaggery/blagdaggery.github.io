@@ -1,26 +1,26 @@
 #navbar {
   z-index: 1;
-  background-color: #ffffff;
+  background-color: #f3f3f3;
   position: sticky;
   top: 0;
   padding: 1rem;
   height: 100vh;
   box-sizing: border-box;
-  box-shadow: 1px 0px 5px #b5b5b5;
+  box-shadow: 1px 0px 5px #DDDDDD;
 }
 #navbar .nav-link {
   display: inline-block;
   font-size: 1.5rem;
   margin: 10px;
   text-decoration: none;
-  color: #003d1e;
+  color: #1F1F1F;
   transition: all 0.25s ease-out;
   border-bottom: 2px solid transparent;
   font-weight: bold;
 }
 #navbar .nav-link:hover,
 #navbar .nav-link:focus {
-  border-color: #003d1e;
+  border-color: #1F1F1F;
 }
 @media (max-width: 700px) {
   .navbar-container {
@@ -29,52 +29,69 @@
 }
 @media (prefers-color-scheme: dark) {
   #navbar {
-    background-color: #676767;
+    background-color: #393939;
     box-shadow: none;
   }
   #navbar .nav-link {
-    color: #ffffff;
+    color: #f3f3f3;
   }
   #navbar .nav-link:hover,
   #navbar .nav-link:focus {
-    border-color: #ffffff;
+    border-color: #f3f3f3;
   }
 }
 #welcome-section {
   width: 100%;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #dcdcdd;
+  border-bottom: 1px solid #DDDDDD;
+}
+#welcome-section h1,
+#welcome-section h2 {
+  color: #0D4222;
 }
 #welcome-section .b-highlight {
   color: #ffffff;
-  background-color: #006130;
+  background-color: #0D4222;
   padding: 0 12px;
   border-radius: 8px;
+  margin-right: 2px;
 }
 @media (min-width: 700px) {
   #welcome-section {
     height: 66vh;
+    min-height: 350px;
   }
 }
 @media (prefers-color-scheme: dark) {
   #welcome-section {
-    border-bottom: 1px solid #676767;
+    border-bottom: 1px solid #5E5E5E;
+  }
+  #welcome-section h1,
+  #welcome-section h2 {
+    color: #63AA78;
   }
   #welcome-section .b-highlight {
-    color: #b5b5b5;
+    background-color: #63AA78;
+    color: #1F1F1F;
   }
 }
 #projects {
-  border-bottom: 1px solid #dcdcdd;
+  border-bottom: 1px solid #DDDDDD;
 }
 #projects .project-container {
   margin-bottom: 2.5rem;
+}
+@media (prefers-color-scheme: dark) {
+  #projects {
+    border-bottom: 1px solid #5E5E5E;
+  }
 }
 #footer .headshot {
   margin-bottom: 1.25rem;
   width: 100%;
   display: block;
+  border-radius: 8px;
 }
 #footer .footer-item {
   font-size: 1.25rem;
@@ -174,13 +191,13 @@ h3,
 h4,
 h5,
 h6 {
-  color: #003d1e;
+  color: #1F1F1F;
 }
 p {
-  color: #130303;
+  color: #1F1F1F;
 }
 .highlight {
-  background-color: #382633;
+  background-color: #48333F;
   color: #ffffff;
   padding: 0.25rem 0.5rem;
 }
@@ -188,19 +205,19 @@ a {
   transition: color 0.25s;
 }
 a:link {
-  color: #6c4b5e;
+  color: #006130;
 }
 a:visited {
-  color: #382633;
+  color: #006130;
 }
 a:focus {
-  color: #006130;
+  color: #6C4B5E;
 }
 a:hover {
-  color: #006130;
+  color: #6C4B5E;
 }
 a:active {
-  color: #006130;
+  color: #6C4B5E;
 }
 @media (prefers-color-scheme: dark) {
   h1,
@@ -209,28 +226,33 @@ a:active {
   h4,
   h5,
   h6 {
-    color: #b5b5b5;
+    color: #DDDDDD;
   }
   p {
-    color: #b5b5b5;
+    color: #B0B0B0;
   }
   a {
     transition: color 0.25s;
   }
   a:link {
-    color: #0AFF85;
+    color: #63AA78;
   }
   a:visited {
-    color: #0AFF85;
+    color: #63AA78;
   }
   a:focus {
-    color: #0AFF85;
+    color: #B392A4;
   }
   a:hover {
-    color: #b5b5b5;
+    color: #B392A4;
   }
   a:active {
-    color: #b5b5b5;
+    color: #B392A4;
+  }
+  .highlight {
+    background-color: #B0B0B0;
+    color: #1F1F1F;
+    padding: 0.25rem 0.5rem;
   }
 }
 html {
@@ -248,7 +270,7 @@ html body {
   margin: 0;
 }
 html .navbar-container {
-  flex: 0 0 200px;
+  flex: 0 0 175px;
   box-sizing: border-box;
 }
 html .section-container {
@@ -258,7 +280,7 @@ html .section-container {
 html #welcome-section,
 html #projects,
 html #footer {
-  padding: 3rem 1rem;
+  padding: 3rem 1.25rem;
   box-sizing: border-box;
 }
 @media (min-width: 700px) {
@@ -270,6 +292,6 @@ html #footer {
 }
 @media (prefers-color-scheme: dark) {
   html {
-    background-color: #130303;
+    background-color: #1F1F1F;
   }
 }

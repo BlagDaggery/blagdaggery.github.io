@@ -101,7 +101,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: @green-dark;
+  color: @black;
 }
 
 p {
@@ -118,23 +118,23 @@ a {
   transition: color 0.25s;
 
   &:link {
-    color: @purple-light;
+    color: @green-primary;
   }
 
   &:visited {
-    color: @purple-dark;
+    color: @green-primary;
   }
 
   &:focus {
-    color: @green-light;
+    color: @purple-primary;
   }
 
   &:hover {
-    color: @green-light;
+    color: @purple-primary;
   }
 
   &:active {
-    color: @green-light;
+    color: @purple-primary;
   }
 }
 
@@ -146,34 +146,40 @@ a {
   h4,
   h5,
   h6 {
-    color: @gray;
+    color: @gray-lightest;
   }
 
   p {
-    color: @gray;
+    color: @gray-light;
   }
 
   a {
     transition: color 0.25s;
 
     &:link {
-      color: @green-soft;
+      color: @green-light;
     }
 
     &:visited {
-      color: @green-soft;
+      color: @green-light;
     }
 
     &:focus {
-      color: @green-soft;
+      color: @purple-light;
     }
 
     &:hover {
-      color: @gray;
+      color: @purple-light;
     }
 
     &:active {
-      color: @gray;
+      color: @purple-light;
     }
+  }
+
+  .highlight {
+    background-color: @gray-light;
+    color: @black;
+    padding: 0.25rem 0.5rem;
   }
 }

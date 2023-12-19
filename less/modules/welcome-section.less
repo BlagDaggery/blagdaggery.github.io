@@ -2,19 +2,25 @@
   width: 100%;
   display: flex;
   align-items: center;
-  border-bottom: @gray-light-border;
+  border-bottom: @gray-lightest-border;
+
+  h1, h2 {
+    color: @green-dark;
+  }
 
   .b-highlight {
     color: @white;
-    background-color: @green-light;
+    background-color: @green-dark;
     padding: 0 12px;
     border-radius: 8px;
+    margin-right: 2px;
   }
 }
 
 @media (min-width: @tablet-width) {
   #welcome-section {
     height: 66vh;
+    min-height: 350px;
   }
 }
 
@@ -22,8 +28,13 @@
   #welcome-section {
     border-bottom: @gray-dark-border;
 
+    h1, h2 {
+      color: @green-light;
+    }
+
     .b-highlight {
-      color: @gray;
+      background-color: @green-light;
+      color: @black;
     }
   }
 }
