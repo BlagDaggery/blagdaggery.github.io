@@ -79,16 +79,16 @@ blockquote {
   }
 }
 
+.p-large {
+  font-size: 1.125rem;
+}
+
 p {
   font-size: 1rem;
 }
 
 .p-small {
   font-size: 0.875rem;
-}
-
-.p-medium {
-  font-size: 1.125rem;
 }
 
 .bold {
@@ -100,11 +100,10 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  color: @black;
-}
-
-p {
+h6,
+p,
+ul,
+li {
   color: @black;
 }
 
@@ -149,7 +148,9 @@ a {
     color: @gray-lightest;
   }
 
-  p {
+  p,
+  ul,
+  li {
     color: @gray-light;
   }
 

@@ -1,9 +1,11 @@
 @import "modules/variables";
+@import "modules/typography";
+@import "modules/buttons";
+@import "modules/styleguide";
 @import "modules/navbar";
 @import "modules/welcome-section";
 @import "modules/projects";
 @import "modules/footer";
-@import "modules/typography";
 
 html {
   font-family: 'Cabin', sans-serif;
@@ -30,8 +32,11 @@ html {
     box-sizing: border-box;
   }
 
-  #welcome-section,
-  #projects,
+  section {
+    border-bottom: @gray-lightest-border;
+  }
+
+  section,
   #footer {
     padding: 3rem 1.25rem;
     box-sizing: border-box;
@@ -39,8 +44,7 @@ html {
 
   @media (min-width: @tablet-width) {
 
-    #welcome-section,
-    #projects,
+    section,
     #footer {
       padding: 3rem 6rem;
     }
@@ -50,5 +54,9 @@ html {
 @media(prefers-color-scheme: dark) {
   html {
     background-color: @black;
+  }
+  
+  section {
+    border-bottom: @gray-dark-border;
   }
 }
