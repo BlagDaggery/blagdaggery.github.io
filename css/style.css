@@ -126,7 +126,8 @@ a:active {
   li {
     color: #B0B0B0;
   }
-  b {
+  b,
+  .bold {
     color: #DDDDDD;
   }
   a {
@@ -217,9 +218,6 @@ a:active {
   cursor: not-allowed !important;
 }
 .color-group {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   margin-bottom: 2rem;
 }
 .color-grid {
@@ -231,11 +229,15 @@ a:active {
 .color-column {
   margin: 0 2rem 2rem 0;
 }
+.color-column:last-of-type {
+  margin-right: 0;
+}
 .color-box {
-  width: 150px;
+  width: 200px;
   height: 150px;
   border-radius: 8px;
   border: 1px solid #DDDDDD;
+  box-sizing: border-box;
 }
 #color-box-1 {
   background-color: #63AA78;
