@@ -85,7 +85,8 @@ h4,
 h5,
 h6,
 p,
-ul {
+ul,
+li {
   color: #1F1F1F;
 }
 .highlight {
@@ -121,8 +122,12 @@ a:active {
     color: #DDDDDD;
   }
   p,
-  ul {
+  ul,
+  li {
     color: #B0B0B0;
+  }
+  b {
+    color: #DDDDDD;
   }
   a {
     transition: color 0.25s;
